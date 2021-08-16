@@ -1,0 +1,152 @@
+.featured
+  background: #F4F8F8
+  padding: 80px 0 100px 0
+  .container
+    flex-direction: column
+    max-width: 1140px
+    .featured__top
+      display: flex
+      justify-content: space-between
+      margin-bottom: 30px
+      h1
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        color: #2E2E2E
+      .featured__link
+        display: flex
+        align-items: center
+        span
+          font-family: Poppins, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 21px
+          color: #418542
+          margin-right: 5px
+      h2
+        margin-bottom: 10px
+        span
+          font-family: Poppins, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 48px
+          line-height: 128.5%
+          letter-spacing: -0.5px
+          text-transform: uppercase
+          color: #2E2E2E
+          &:last-child
+            color: #E78525
+      h3
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 200%
+        text-transform: uppercase
+        color: #000000
+        margin-bottom: -10px
+    .featured__all
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr 1fr
+      grid-gap: 20px
+      .featured__item
+        background: #FFFFFF
+        border: 1px solid #E2EAED
+        border-radius: 10px
+        padding: 14px
+        .featured__img
+          width: 100%
+          height: 235px
+          display: flex
+          align-items: center
+          justify-content: center
+          img
+            width: 79.5%
+            max-height: 100%
+            object-fit: contain
+        .featured__text
+          display: flex
+          margin-top: 15px
+          flex-direction: column
+          .featured-desc
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 127.5%
+            letter-spacing: 0.01em
+            color: #212121
+            margin-bottom: 10px
+          .featured__customer
+            display: flex
+            margin-bottom: 15px
+            align-items: center
+            .featured__stars
+              display: flex
+              margin-right: 15px
+              .featured__star
+                &:not(:last-child)
+                  margin-right: 4px
+              .featured__star_active
+                path
+                  fill: #F8C345
+            .featured__reviews
+              span
+                font-family: Poppins, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 12px
+                line-height: 18px
+                color: #418542
+          .featured__price
+            display: flex
+            align-items: flex-end
+            margin-bottom: 20px
+            .featured__price-now
+              font-family: Inter, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 24px
+              line-height: 150%
+              letter-spacing: -0.01em
+              color: #2E2E2E
+            .featured__price-old
+              font-family: Inter, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 16px
+              line-height: 150%
+              letter-spacing: -0.01em
+              text-decoration-line: line-through
+              color: #2E2E2E
+              opacity: 0.5
+              margin-bottom: 3px
+              margin-left: 10px
+          .featured__button
+            background: #418542
+            border-radius: 5px
+            display: flex
+            align-items: center
+            justify-content: center
+            padding: 12px 0
+            margin-top: auto
+            span
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 14px
+              line-height: 21px
+              color: #FFFFFF
+              margin-left: 10px
+.featured_blog
+  background: #FFFFFF
+  padding-top: 50px
+.featured_post
+  padding-bottom: 50px
+  .container
+    padding-right: 386px
+    .featured__all
+      grid-template-columns: 1fr 1fr

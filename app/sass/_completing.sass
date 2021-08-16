@@ -1,0 +1,366 @@
+.completing
+  .container
+    flex-direction: column
+    .completing__navigation
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        height: 100%
+        width: 50%
+        z-index: -1
+        background: #418542
+      &:after
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        height: 100%
+        width: 50%
+        z-index: -2
+        background: #E3EDE3
+      .completing__navigation-left
+        width: 100%
+        height: 60px
+        background: #418542
+      .completing__navigation-right
+        width: 100%
+        height: 60px
+        background: #FFFFFF
+        transform: translateX(-20px)
+        position: relative
+        &:after
+          content: ''
+          position: absolute
+          top: 0
+          right: -20px
+          width: 20px
+          background: #FFFFFF
+          height: 100%
+      .completing__navigation-all
+        display: flex
+        .completing__navigation-item
+          padding: 16.5px 100px
+          background-size: contain
+          &:not(:last-child)
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              width: 24px
+              height: 24px
+              right: 25px
+              top: 50%
+              transform: translateY(-50%)
+              background: url("../img/completing/05.png")
+          &:first-child
+            background: url("../img/completing/02.png") right no-repeat
+            span
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 18px
+              line-height: 27px
+              color: #FFFFFF
+          &:nth-child(2)
+            background: url("../img/completing/03.png") right no-repeat
+            span
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 18px
+              line-height: 27px
+              color: #FFFFFF
+          &:nth-child(3)
+            background: url("../img/completing/04.png") right no-repeat
+            position: relative
+            z-index: 2
+            &:after
+              content: ''
+              position: absolute
+              left: 0
+              top: 0
+              z-index: -10
+              width: 100%
+              height: 100%
+            span
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 18px
+              line-height: 27px
+              color: #418542
+          span
+            white-space: nowrap
+    .completing__reserved
+      font-family: Poppins, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 21px
+      text-align: center
+      color: #434343
+      background: #FDF3D1
+      padding: 15px 0
+      span
+        font-weight: 700
+    .completing__wrapper
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 754px
+      margin: 33px auto 0 auto
+      h1
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 20px
+        line-height: 30px
+        color: #212121
+        margin-bottom: 22px
+      .completing__supercharge
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 140%
+        text-align: center
+        color: #418542
+        background: rgba(211, 238, 212, 0.6)
+        border: 1px solid rgba(65, 133, 66, 0.15)
+        border-radius: 10px
+        padding: 20px 30px
+        margin-bottom: 11px
+      .completing__banners
+        display: flex
+        flex-direction: column
+        .completing__banner
+          &:not(:last-child)
+            margin-bottom: 11px
+          background: #FFFFFF
+          border: 1px solid #D0D0D0
+          border-radius: 10px
+          display: flex
+          position: relative
+          overflow: hidden
+          align-items: center
+          padding: 20px 25px
+          .completing__banner-img
+            width: 100%
+            max-width: 155px
+            height: 154px
+            margin-top: 13px
+            margin-left: 13px
+            img
+              margin-left: auto
+              width: 100%
+              height: 100%
+              object-fit: contain
+              position: relative
+              z-index: 2
+            .completing__banner-img-text
+              position: absolute
+              top: 10px
+              left: 15px
+              z-index: 2
+              span
+                &:first-child
+                  font-family: Poppins, sans-serif
+                  font-style: normal
+                  font-weight: 800
+                  font-size: 20px
+                  line-height: 30px
+                  color: #FFFFFF
+                &:nth-child(2)
+                  font-family: Poppins, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 14px
+                  line-height: 21px
+                  display: flex
+                  text-transform: uppercase
+                  color: #FFFFFF
+            .completing__banner-circle
+              top: -222px
+              left: -136px
+              width: 309px
+              height: 309px
+              position: absolute
+              z-index: 1
+              border-radius: 50%
+              background: #E78525
+          .completing__banner-text
+            display: flex
+            flex-direction: column
+            width: 100%
+            max-width: 336px
+            margin-left: 30px
+            .completing__banner-name
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 18px
+              line-height: 140%
+              color: #020202
+              margin-bottom: 15px
+            .completing__banner-tropical
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 14px
+              line-height: 21px
+              color: #418542
+              padding: 7px 15px
+              background: rgba(65, 133, 66, 0.15)
+              border-radius: 5px
+              margin-right: auto
+            .completing__banner-checks
+              display: flex
+              flex-direction: column
+              margin-top: 15px
+              .completing__banner-check
+                display: flex
+                align-items: center
+                span
+                  font-family: Poppins, sans-serif
+                  font-style: normal
+                  font-weight: normal
+                  font-size: 16px
+                  line-height: 24px
+                  color: #212121
+                  margin-left: 10px
+          .completing__banner-right
+            display: flex
+            flex-direction: column
+            margin-left: auto
+            align-items: center
+            position: relative
+            .completing__banner-click
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: 600
+              font-size: 14px
+              line-height: 21px
+              color: #E78525
+              border: 1px solid #E78525
+              border-radius: 100px
+              padding: 7px 38.5px
+              margin-bottom: 25px
+            .completing__banner-rectangle
+              width: 50px
+              height: 50px
+              background: #FFFFFF
+              border: 1px solid #D0D0D0
+              border-radius: 10px
+            .completing__banner-price
+              display: flex
+              margin-top: 26px
+              .completing__banner-price-now
+                font-family: Poppins, sans-serif
+                font-style: normal
+                font-weight: 600
+                font-size: 24px
+                line-height: 36px
+                color: #2E2E2E
+              .completing__banner-price-old
+                font-family: Poppins, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 21px
+                text-decoration-line: line-through
+                color: #2E2E2E
+                opacity: 0.5
+                margin-left: 10px
+                margin-top: 3px
+            svg
+              position: absolute
+              left: -17px
+              top: 25.5px
+      .completing__prices
+        display: flex
+        flex-direction: column
+        background: #FFFFFF
+        border: 1px solid rgba(63, 105, 129, 0.15)
+        border-radius: 10px
+        margin-top: 54px
+        .completing__prices-item
+          display: flex
+          justify-content: space-between
+          padding: 0 26px
+          border-top: 1px solid rgba(63, 105, 129, 0.15)
+          &:not(:last-child)
+            padding: 18px 26px
+          &:first-child
+            border: none
+          &:nth-child(3)
+            span
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 16px
+              line-height: 24px
+              color: #418542
+          &:last-child
+            background: #E3EDE3
+            border-radius: 0px 0px 9px 9px
+            border: none
+            padding: 12px 25px
+            span
+              font-family: Poppins, sans-serif
+              font-style: normal
+              font-weight: bold
+              font-size: 24px
+              line-height: 36px
+              color: #418542
+              &:last-child
+                font-weight: 400
+          span
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            color: #212121
+      .completing-button
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 21px
+        color: #FFFFFF
+        text-align: center
+        background: #418542
+        cursor: pointer
+        border-radius: 5px
+        padding: 12px 0
+        margin: 20px 0
+      .completing__policy
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 160%
+        color: rgba(46, 46, 46, 0.6)
+        a
+          color: #418542
+          text-decoration: underline
+
+
+
+
+
+
+
+
+
+
+
+
+
+

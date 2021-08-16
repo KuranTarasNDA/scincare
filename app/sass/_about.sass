@@ -1,0 +1,52 @@
+.about
+  position: relative
+  .container
+    max-width: 1140px
+    padding: 120px 0
+    position: relative
+    z-index: 5
+    .about__text
+      display: flex
+      flex-direction: column
+      max-width: 451px
+      h2
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 12px
+        line-height: 18px
+        text-transform: uppercase
+        color: #000000
+      h1
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: 800
+        font-size: 48px
+        line-height: 120%
+        text-transform: uppercase
+        color: #418542
+  .bg
+    img
+      position: absolute
+      &:first-child
+        width: 53.8%
+        right: 0
+        top: 0
+        height: 100%
+        object-fit: cover
+      &:nth-child(2)
+        left: 0
+        bottom: 0
+        z-index: 1
+      &:nth-child(3)
+        top: 0
+        left: calc(50% - 29px)
+        transform: translateX(-50%)
+        z-index: 1
+      &:nth-child(4)
+        width: 64.7%
+        left: 0
+        top: 0
+        height: 100%
+        object-fit: fill
+        object-position: right

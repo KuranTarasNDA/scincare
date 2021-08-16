@@ -1,0 +1,66 @@
+.hero
+  position: relative
+  .container
+    max-width: 1140px
+    position: relative
+    z-index: 2
+    padding: 152px 0 130px 0
+    .hero__text
+      display: flex
+      flex-direction: column
+      h1
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 76px
+        line-height: 78px
+        text-transform: uppercase
+        color: #3C6B45
+        max-width: 600px
+      .hero__buttons
+        display: flex
+        flex-direction: column
+        .hero-button
+          margin-right: auto
+          &:first-child
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 32px
+            line-height: 37px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #FFFFFF
+            background: #DB8222
+            padding: 13px 41px 10px 43px
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              right: -5px
+              bottom: -5px
+              border: 2px solid #BE6C13
+              width: 100%
+              z-index: -1
+              height: 100%
+              box-sizing: border-box
+          &:last-child
+            font-family: Rubik, sans-serif
+            font-style: normal
+            font-size: 26px
+            line-height: 161.72%
+            text-transform: uppercase
+            color: #3C5F43
+            background: #FFFFFF
+            padding: 12px 50px
+            margin-top: 25px
+            border-radius: 3px
+  .bg
+    img
+      position: absolute
+      z-index: 1
+      top: 0
+      left: 0
+      width: 100%
+      object-fit: cover
+      height: 100%

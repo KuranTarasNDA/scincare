@@ -1,0 +1,46 @@
+.pluses
+  background: #FFF8EF
+  padding: 30px 0
+  .container
+    display: flex
+    max-width: 1140px
+    justify-content: space-between
+    .pluses__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      &:not(:last-child)
+        .pluses__img
+          border: 1.5px solid #ED8926
+      &:nth-child(4)
+        .pluses__img
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            bottom: 37px
+            left: 0
+            width: 100%
+            height: 1.4px
+            background: #ED8926
+            transform: rotate(-31.46deg)
+      .pluses__img
+        width: 80px
+        height: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        border-radius: 50%
+        box-sizing: border-box
+        margin-bottom: 15px
+        img
+          object-fit: contain
+      .pluses__text
+        font-family: Poppins, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 150%
+        text-align: center
+        text-transform: uppercase
+        color: #4E4E4E
