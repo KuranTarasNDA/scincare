@@ -9,8 +9,20 @@ $(window).on("load" , function () {
         $('.header').toggleClass('header_active')
         if ($('.header').hasClass('header_active')) {
             $('.header__mob').slideDown()
+            $('.header__top').slideUp()
+            $('body').addClass('scroll')
         } else {
             $('.header__mob').slideUp()
+            $('.header__top').slideDown()
+            $('body').removeClass('scroll')
+        }
+    })
+
+    $(window).on('scroll', () => {
+        if ($('.header').offset().top > 0) {
+            $('.header').addClass('header_border')
+        } else {
+            $('.header').removeClass('header_border')
         }
     })
 

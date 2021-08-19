@@ -1,6 +1,12 @@
 .header
   background: #FFFFFF
   position: relative
+  @media (max-width: 1024px)
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 10
   .container
     flex-direction: column
     .header__top
@@ -22,6 +28,11 @@
         letter-spacing: 0.5px
         color: #FCFCFC
         margin: 0 auto
+        @media (max-width: 1024px)
+          font-size: 12px
+          line-height: 18px
+        @media (max-width: 414px)
+          font-size: 2.8vw
     .header__bottom
       display: flex
       width: 100%
@@ -206,6 +217,8 @@
                 border-radius: 10px
                 display: flex
                 flex-direction: column
+                @media (max-width: 911px)
+                  display: none
                 .header__cart-products
                   display: flex
                   flex-direction: column
@@ -344,7 +357,7 @@
       z-index: 10
       width: 100%
       background: #FFFFFF
-      height: calc(100vh - 119px)
+      height: calc(100vh - 79px)
       padding: 20px
       .header__mob-wrapper
         display: flex
@@ -417,7 +430,10 @@
           color: #2E2E2E
           margin: 0 10px
 
-
+.header_border
+  border-bottom: 1px solid #E2EAED
+.header_active
+  border-bottom: none
 
 
 
