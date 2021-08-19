@@ -1,7 +1,8 @@
 .navigation
   padding-bottom: 100px
+  @media (max-width: 911px)
+    padding-bottom: 40px
   .container
-    padding-right: 386px
     max-width: 1140px
     flex-direction: column
     .navigation__socials
@@ -12,6 +13,10 @@
       display: flex
       justify-content: space-between
       align-items: center
+      @media (max-width: 600px)
+        flex-direction: column
+        align-items: normal
+        padding: 20px
       h1
         font-family: Poppins, sans-serif
         font-style: normal
@@ -20,15 +25,27 @@
         line-height: 200%
         text-transform: uppercase
         color: #418542
+        margin-bottom: 0
+        @media (max-width: 600px)
+          margin-bottom: 20px
       .navigation__socials-all
         display: flex
+        @media (max-width: 600px)
+          display: grid
+          grid-template-columns: 1fr 1fr 1fr
+          grid-gap: 10px
         .navigation__item
           border-radius: 5px
           padding: 10px 20px
           display: flex
           align-items: center
+          @media (max-width: 600px)
+            justify-content: center
+            padding: 10px 0
           &:not(:last-child)
             margin-right: 10px
+            @media (max-width: 600px)
+              margin-right: 0
           &:first-child
             background: #00C2FF
           &:nth-child(2)
@@ -47,6 +64,8 @@
     .navigation__buttons
       display: flex
       margin-top: 20px
+      @media (max-width: 600px)
+        margin-top: 10px
       .navigation__prev
         margin-right: 15px
         border: 1px solid #E2EAED
@@ -55,6 +74,10 @@
         display: flex
         align-items: center
         cursor: pointer
+        @media (max-width: 600px)
+          width: 50%
+          margin-right: 10px
+          justify-content: center
         span
           font-family: Poppins, sans-serif
           font-style: normal
@@ -70,6 +93,9 @@
         display: flex
         align-items: center
         cursor: pointer
+        @media (max-width: 600px)
+          width: 50%
+          justify-content: center
         span
           font-family: Poppins, sans-serif
           font-style: normal

@@ -1,14 +1,27 @@
 .pluses
   background: #FFF8EF
-  padding: 30px 0
+  padding: 30px 20px
+  @media (max-width: 911px)
+    padding: 20px
   .container
     display: flex
     max-width: 1140px
     justify-content: space-between
+    @media (max-width: 911px)
+      display: grid
+      grid-template-columns: 1fr 1fr 1fr
+      grid-gap: 10px
+      @media (max-width: 600px)
+        grid-template-columns: 1fr 1fr
     .pluses__item
       display: flex
       flex-direction: column
       align-items: center
+      @media (max-width: 911px)
+        background: #FFF8EF
+        border: 1px solid rgba(237, 137, 38, 0.15)
+        border-radius: 5px
+        padding: 20px 0 15px 0
       &:not(:last-child)
         .pluses__img
           border: 1.5px solid #ED8926
@@ -44,3 +57,5 @@
         text-align: center
         text-transform: uppercase
         color: #4E4E4E
+        @media (max-width: 911px)
+          font-size: 14px

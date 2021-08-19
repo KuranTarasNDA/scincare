@@ -3,9 +3,13 @@
   background: #FFFFFF
   border-right: none
   border-left: none
+  padding: 0 20px
+  overflow: hidden
   .container
     max-width: 1140px
     padding: 20px 0
+    @media (max-width: 600px)
+      padding: 17px 0
     .position__item
       display: flex
       &:last-child
@@ -23,4 +27,5 @@
         color: #2E2E2E
         opacity: 0.8
         margin-right: 10px
+        white-space: nowrap
 

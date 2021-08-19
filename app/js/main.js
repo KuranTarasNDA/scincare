@@ -5,7 +5,14 @@ $(window).on("load" , function () {
             $(this).addClass('payment__payment_active')
         })
     })
-
+    $('.header__burger').on('click', () => {
+        $('.header').toggleClass('header_active')
+        if ($('.header').hasClass('header_active')) {
+            $('.header__mob').slideDown()
+        } else {
+            $('.header__mob').slideUp()
+        }
+    })
 
 })
 

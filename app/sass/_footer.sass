@@ -1,5 +1,6 @@
 .footer
   background: #212121
+  padding: 0 20px
   .container
     max-width: 1140px
     flex-direction: column
@@ -7,9 +8,18 @@
     .footer__top
       display: flex
       justify-content: space-between
+      @media (max-width: 911px)
+        flex-direction: column
       .footer__col
         display: flex
         flex-direction: column
+        @media (max-width: 911px)
+          background: #212121
+          border: 1px solid rgba(226, 234, 237, 0.15)
+          border-radius: 5px
+          padding: 20px 30px
+        &:not(:last-child)
+          margin-bottom: 10px
         .footer-sub
           font-family: Poppins, sans-serif
           font-style: normal
@@ -40,7 +50,20 @@
       padding-top: 12px
       border-top: 1px solid #2B2B2B
       margin-top: 37px
+      @media (max-width: 911px)
+        margin-top: 15px
+        flex-direction: column-reverse
+        padding-top: 0
+        border: none
+        align-items: center
       .footer__left
+        @media (max-width: 911px)
+          padding-top: 10px
+          width: 100%
+          border-top: 1px solid rgba(226, 234, 237, 0.15)
+          justify-content: center
+          display: flex
+          margin-top: 20px
         p
           font-family: Poppins, sans-serif
           font-style: normal

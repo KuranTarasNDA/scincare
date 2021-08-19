@@ -15,6 +15,8 @@
         width: 50%
         z-index: -1
         background: #418542
+        @media (max-width: 911px)
+          display: none
       &:after
         content: ''
         position: absolute
@@ -24,16 +26,30 @@
         width: 50%
         z-index: -2
         background: #E3EDE3
+        @media (max-width: 911px)
+          display: none
       .completing__navigation-left
         width: 100%
         height: 60px
         background: #418542
+        @media (max-width: 911px)
+          position: absolute
+          width: 30%
+          left: 0
+          height: 42px
+          background: #E3EDE3
+          z-index: -1
       .completing__navigation-right
         width: 100%
         height: 60px
         background: #FFFFFF
         transform: translateX(-20px)
         position: relative
+        @media (max-width: 911px)
+          transform: translate(0)
+          width: 20px
+          background: rgba(227, 237, 227, 0.5)
+          height: 42px
         &:after
           content: ''
           position: absolute
@@ -42,11 +58,23 @@
           width: 20px
           background: #FFFFFF
           height: 100%
+          @media (max-width: 911px)
+            display: none
       .completing__navigation-all
         display: flex
+        @media (max-width: 911px)
+          width: 100%
         .completing__navigation-item
           padding: 16.5px 100px
           background-size: contain
+          @media (max-width: 1200px)
+            padding: 16.5px 60px
+          @media (max-width: 911px)
+            width: 100%
+            align-items: center
+            padding: 10.5px 0
+            display: flex
+            justify-content: center
           &:not(:last-child)
             position: relative
             &:after
@@ -76,10 +104,15 @@
               font-size: 18px
               line-height: 27px
               color: #FFFFFF
+          &:not(:nth-child(3))
+            @media (max-width: 911px)
+              display: none
           &:nth-child(3)
             background: url("../img/completing/04.png") right no-repeat
             position: relative
             z-index: 2
+            @media (max-width: 911px)
+              background: url("../img/completing/03.png") right no-repeat #E3EDE380
             &:after
               content: ''
               position: absolute
@@ -95,6 +128,10 @@
               font-size: 18px
               line-height: 27px
               color: #418542
+              @media (max-width: 911px)
+                font-size: 14px
+                line-height: 21px
+                color: #FFFFFF
           span
             white-space: nowrap
     .completing__reserved
@@ -113,8 +150,12 @@
       display: flex
       flex-direction: column
       width: 100%
-      max-width: 754px
+      max-width: 794px
       margin: 33px auto 0 auto
+      padding: 0 20px
+      @media (max-width: 911px)
+        padding: 30px 20px 0 20px
+        margin: 0 auto
       h1
         font-family: Poppins, sans-serif
         font-style: normal
@@ -123,6 +164,10 @@
         line-height: 30px
         color: #212121
         margin-bottom: 22px
+        @media (max-width: 911px)
+          font-size: 14px
+          line-height: 21px
+          margin-bottom: 20px
       .completing__supercharge
         font-family: Poppins, sans-serif
         font-style: normal
@@ -136,12 +181,18 @@
         border-radius: 10px
         padding: 20px 30px
         margin-bottom: 11px
+        @media (max-width: 911px)
+          font-size: 14px
+          padding: 20px
+          margin-bottom: 20px
       .completing__banners
         display: flex
         flex-direction: column
         .completing__banner
           &:not(:last-child)
             margin-bottom: 11px
+            @media (max-width: 650px)
+              margin-bottom: 10px
           background: #FFFFFF
           border: 1px solid #D0D0D0
           border-radius: 10px
@@ -150,12 +201,22 @@
           overflow: hidden
           align-items: center
           padding: 20px 25px
+          @media (max-width: 650px)
+            padding: 20px 20px 20px 9px
+            align-items: flex-start
           .completing__banner-img
             width: 100%
             max-width: 155px
             height: 154px
             margin-top: 13px
             margin-left: 13px
+            @media (max-width: 650px)
+              height: 136px
+              min-width: 102px
+              max-width: 102px
+              margin-left: 0
+              margin-right: 0
+              margin-top: 25px
             img
               margin-left: auto
               width: 100%
@@ -176,6 +237,9 @@
                   font-size: 20px
                   line-height: 30px
                   color: #FFFFFF
+                  @media (max-width: 650px)
+                    font-size: 14px
+                    line-height: 21px
                 &:nth-child(2)
                   font-family: Poppins, sans-serif
                   font-style: normal
@@ -185,6 +249,9 @@
                   display: flex
                   text-transform: uppercase
                   color: #FFFFFF
+                  @media (max-width: 650px)
+                    font-size: 10px
+                    line-height: 15px
             .completing__banner-circle
               top: -222px
               left: -136px
@@ -194,12 +261,23 @@
               z-index: 1
               border-radius: 50%
               background: #E78525
+              @media (max-width: 650px)
+                width: 187px
+                height: 187px
+                top: -119px
+                left: -76px
           .completing__banner-text
             display: flex
             flex-direction: column
             width: 100%
             max-width: 336px
             margin-left: 30px
+            margin-right: 10px
+            @media (max-width: 911px)
+              margin-left: 10px
+            @media (max-width: 650px)
+              margin-right: 0
+              margin-left: 0
             .completing__banner-name
               font-family: Poppins, sans-serif
               font-style: normal
@@ -208,6 +286,10 @@
               line-height: 140%
               color: #020202
               margin-bottom: 15px
+              @media (max-width: 650px)
+                font-size: 14px
+                margin-bottom: 10px
+                max-width: 176px
             .completing__banner-tropical
               font-family: Poppins, sans-serif
               font-style: normal
@@ -219,10 +301,16 @@
               background: rgba(65, 133, 66, 0.15)
               border-radius: 5px
               margin-right: auto
+              @media (max-width: 650px)
+                padding: 5px 10px
+                font-size: 10px
+                line-height: 15px
             .completing__banner-checks
               display: flex
               flex-direction: column
               margin-top: 15px
+              @media (max-width: 650px)
+                margin-top: 18px
               .completing__banner-check
                 display: flex
                 align-items: center
@@ -234,12 +322,20 @@
                   line-height: 24px
                   color: #212121
                   margin-left: 10px
+                  @media (max-width: 650px)
+                    font-size: 12px
+                    line-height: 18px
           .completing__banner-right
             display: flex
             flex-direction: column
             margin-left: auto
             align-items: center
             position: relative
+            @media (max-width: 650px)
+              align-items: flex-end
+              position: absolute
+              top: 20px
+              right: 20px
             .completing__banner-click
               font-family: Poppins, sans-serif
               font-style: normal
@@ -251,15 +347,31 @@
               border-radius: 100px
               padding: 7px 38.5px
               margin-bottom: 25px
+              white-space: nowrap
+              cursor: pointer
+              @media (max-width: 650px)
+                font-size: 9px
+                margin-bottom: 10px
+                line-height: 13.5px
+                padding: 2px 5px
+                background: #E78525
+                color: #FFFFFF
+                border-radius: 5px
             .completing__banner-rectangle
               width: 50px
               height: 50px
               background: #FFFFFF
               border: 1px solid #D0D0D0
               border-radius: 10px
+              @media (max-width: 650px)
+                width: 40px
+                height: 40px
             .completing__banner-price
               display: flex
               margin-top: 26px
+              @media (max-width: 650px)
+                margin-top: 10px
+                flex-direction: column
               .completing__banner-price-now
                 font-family: Poppins, sans-serif
                 font-style: normal
@@ -267,6 +379,9 @@
                 font-size: 24px
                 line-height: 36px
                 color: #2E2E2E
+                @media (max-width: 650px)
+                  font-size: 12px
+                  line-height: 18px
               .completing__banner-price-old
                 font-family: Poppins, sans-serif
                 font-style: normal
@@ -278,10 +393,17 @@
                 opacity: 0.5
                 margin-left: 10px
                 margin-top: 3px
+                @media (max-width: 650px)
+                  margin-top: 0
+                  font-size: 12px
+                  line-height: 18px
+                  margin-left: 0
             svg
               position: absolute
               left: -17px
               top: 25.5px
+              @media (max-width: 650px)
+                display: none
       .completing__prices
         display: flex
         flex-direction: column
@@ -289,6 +411,8 @@
         border: 1px solid rgba(63, 105, 129, 0.15)
         border-radius: 10px
         margin-top: 54px
+        @media (max-width: 650px)
+          margin-top: 20px
         .completing__prices-item
           display: flex
           justify-content: space-between
@@ -347,6 +471,8 @@
         font-size: 14px
         line-height: 160%
         color: rgba(46, 46, 46, 0.6)
+        @media (max-width: 650px)
+          font-size: 12px
         a
           color: #418542
           text-decoration: underline

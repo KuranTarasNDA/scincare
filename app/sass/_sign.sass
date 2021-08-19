@@ -1,11 +1,20 @@
 .sign
   background: #EEF6ED
+  padding: 0 40px
   .container
     max-width: 1140px
     padding: 50px 0
     justify-content: space-between
+    @media (max-width: 911px)
+      flex-direction: column
+      padding: 30px 0
     .sign__desc
       max-width: 330px
+      @media (max-width: 1024px)
+        max-width: 250px
+      @media (max-width: 911px)
+        max-width: 100%
+        margin-bottom: 20px
       p
         font-family: Poppins, sans-serif
         font-style: normal
@@ -18,6 +27,8 @@
     .sign__form
       form
         display: flex
+        @media (max-width: 911px)
+          flex-direction: column
         input
           font-family: Poppins, sans-serif
           font-style: normal
@@ -32,6 +43,9 @@
           max-width: 366px
           padding: 15px 20px 14px 20px
           margin-right: 20px
+          @media (max-width: 911px)
+            max-width: 100%
+            margin-bottom: 15px
         button
           display: flex
           align-items: center
@@ -39,6 +53,8 @@
           padding: 14.5px 47px
           border-radius: 5px
           cursor: pointer
+          @media (max-width: 911px)
+            justify-content: center
           span
             font-family: Poppins, sans-serif
             font-style: normal

@@ -1,6 +1,10 @@
 .featured
   background: #F4F8F8
-  padding: 80px 0 100px 0
+  padding: 80px 20px 100px 20px
+  @media (max-width: 600px)
+    background: #FFFFFF
+    padding-top: 23px
+    padding-bottom: 20px
   .container
     flex-direction: column
     max-width: 1140px
@@ -18,6 +22,7 @@
       .featured__link
         display: flex
         align-items: center
+        cursor: pointer
         span
           font-family: Poppins, sans-serif
           font-style: normal
@@ -28,6 +33,8 @@
           margin-right: 5px
       h2
         margin-bottom: 10px
+        @media (max-width: 911px)
+          margin-bottom: -10px
         span
           font-family: Poppins, sans-serif
           font-style: normal
@@ -37,6 +44,9 @@
           letter-spacing: -0.5px
           text-transform: uppercase
           color: #2E2E2E
+          @media (max-width: 911px)
+            font-size: 24px
+            line-height: 28.8px
           &:last-child
             color: #E78525
       h3
@@ -52,11 +62,22 @@
       display: grid
       grid-template-columns: 1fr 1fr 1fr 1fr
       grid-gap: 20px
+      @media (max-width: 1024px)
+        grid-template-columns: 1fr 1fr 1fr
+      @media (max-width: 800px)
+        grid-template-columns: 1fr 1fr
+      @media (max-width: 600px)
+        grid-template-columns: 1fr
       .featured__item
         background: #FFFFFF
         border: 1px solid #E2EAED
         border-radius: 10px
         padding: 14px
+        display: flex
+        flex-direction: column
+        @media (max-width: 600px)
+          padding: 20px
+
         .featured__img
           width: 100%
           height: 235px
@@ -80,6 +101,8 @@
             letter-spacing: 0.01em
             color: #212121
             margin-bottom: 10px
+            @media (max-width: 600px)
+              font-weight: 600
           .featured__customer
             display: flex
             margin-bottom: 15px
@@ -144,9 +167,27 @@
 .featured_blog
   background: #FFFFFF
   padding-top: 50px
-.featured_post
-  padding-bottom: 50px
+  @media (max-width: 600px)
+    padding: 60px 20px 20px 20px
   .container
-    padding-right: 386px
+    .featured__all
+      .featured__item
+        &:nth-child(4)
+          @media (max-width: 1024px)
+            display: none
+        &:nth-child(3)
+          @media (max-width: 800px)
+            display: none
+        &:not(:first-child)
+          @media (max-width: 600px)
+            display: none
+.featured_post
+  padding: 80px 0 50px 0
+  @media (max-width: 911px)
+    padding-top: 30px
+    padding-bottom: 20px
+  .container
     .featured__all
       grid-template-columns: 1fr 1fr
+      @media (max-width: 600px)
+        grid-template-columns: 1fr

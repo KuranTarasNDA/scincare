@@ -5,19 +5,40 @@
       display: flex
       align-items: center
       justify-content: center
+      position: relative
       .shipping__navigation-left
         width: 100%
         height: 60px
         background: #E3EDE3
+        @media (max-width: 911px)
+          position: absolute
+          width: 30%
+          left: 0
+          height: 42px
       .shipping__navigation-right
         width: 100%
         height: 60px
         background: #FFFFFF
+        @media (max-width: 911px)
+          width: 20px
+          background: #E3EDE380
+          height: 42px
       .shipping__navigation-all
         display: flex
+        @media (max-width: 911px)
+          width: 100%
+          background: #E3EDE380
         .shipping__navigation-item
           padding: 16.5px 100px
           background-size: contain
+          @media (max-width: 1200px)
+            padding: 16.5px 60px
+          @media (max-width: 911px)
+            width: 100%
+            align-items: center
+            padding: 10.5px 0
+            display: flex
+            justify-content: center
           &:first-child
             background: url("../img/shipping/01.png") right no-repeat
             span
@@ -27,7 +48,12 @@
               font-size: 18px
               line-height: 27px
               color: #418542
+              @media (max-width: 911px)
+                font-size: 14px
+                line-height: 21px
           &:not(:first-child)
+            @media (max-width: 911px)
+              display: none
             span
               font-family: Poppins, sans-serif
               font-style: normal
@@ -48,162 +74,192 @@
       text-align: center
       color: #434343
       background: #FDF3D1
-      padding: 15px 0
+      padding: 15px 20px
       span
         font-weight: 700
-    .shipping__fast
-      display: flex
-      padding: 20px 25px
-      background: #FFF8EF
-      border: 1px solid rgba(231, 133, 37, 0.15)
-      border-radius: 10px
-      max-width: 754px
-      margin: 30px auto
-      width: 100%
-      align-items: center
-      .shipping__fast-img
-        background: #E78525
-        border-radius: 50%
-        height: 42px
-        width: 42px
+    .shipping__wrapper
+      padding: 0 20px
+      .shipping__fast
         display: flex
+        padding: 20px 25px
+        background: #FFF8EF
+        border: 1px solid rgba(231, 133, 37, 0.15)
+        border-radius: 10px
+        max-width: 754px
+        margin: 30px auto
+        width: 100%
         align-items: center
-        justify-content: center
-        margin-right: 20px
-      .shipping__fast-text
-        display: flex
-        flex-direction: column
-        .shipping__fast-title
-          font-family: Poppins, sans-serif
-          font-style: normal
-          font-weight: bold
-          font-size: 18px
-          line-height: 27px
-          text-transform: uppercase
-          color: #E78525
-        .shipping__fast-sub
-          font-family: Poppins, sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 15px
-          line-height: 160%
-          color: #434343
-          margin-top: 5px
-    h1
-      font-family: Poppins, sans-serif
-      font-style: normal
-      font-weight: 600
-      font-size: 20px
-      line-height: 30px
-      color: #212121
-      max-width: 754px
-      width: 100%
-      margin: 0 auto 24px auto
-    .shipping__form
-      display: flex
-      flex-direction: column
-      max-width: 754px
-      margin: 0 auto
-      width: 100%
-      .shipping__inputs
-        display: grid
-        grid-gap: 10px 20px
-        margin-bottom: 20px
-        grid-template-areas: 'first first first first first first' 'last last last last last last' 'address address address address address address' 'code code city city state state' 'email email email phone phone phone'
-        input
-          &:first-child
-            grid-area: first
-          &:nth-child(2)
-            grid-area: last
-          &:nth-child(3)
-            grid-area: address
-          &:nth-child(4)
-            grid-area: code
-          &:nth-child(5)
-            grid-area: city
-          &:nth-child(6)
-            grid-area: state
-          &:nth-child(7)
-            grid-area: email
-          &:nth-child(8)
-            grid-area: phone
-          font-family: Poppins, sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 14px
-          line-height: 210%
-          color: rgba(46, 46, 46, 0.6)
-          background: #FFFFFF
-          border: 1px solid rgba(63, 105, 129, 0.15)
-          border-radius: 10px
-          padding: 10px 20px
-      label
-        display: flex
-        align-items: center
-        position: relative
-        margin-bottom: 20px
-        cursor: pointer
-        margin-right: auto
-        &:after
-          content: ''
-          position: absolute
-          width: 20px
-          height: 20px
-          left: 0
-          top: 50%
-          transform: translateY(-50%)
-          background: #FFFFFF
-          border: 1px solid #D0D0D0
-          border-radius: 5px
-        span
-          font-family: Poppins, sans-serif
-          font-style: normal
-          font-weight: normal
-          font-size: 15px
-          line-height: 22px
-          color: #5F5C5C
-          margin-left: 15px
-          cursor: pointer
-        svg
-          position: absolute
-          left: 5px
-          top: 50%
-          transform: translateY(-50%)
-          z-index: 1
-          display: none
-        input:checked ~ svg
-          display: block
-        input
-          opacity: 0
-          width: 20px
-          height: 20px
-      .shipping__button
-        display: flex
-        align-items: center
-        padding: 12px 0
-        background: #418542
-        border-radius: 5px
-        justify-content: center
-        cursor: pointer
-        span
-          font-family: Poppins, sans-serif
-          font-style: normal
-          font-weight: 600
-          font-size: 14px
-          line-height: 21px
-          color: #FFFFFF
-          margin-right: 10px
-    .shipping__secure
-      display: flex
-      max-width: 754px
-      width: 100%
-      margin: 15px auto 0 auto
-      align-items: center
-      span
+        @media (max-width: 911px)
+          padding: 20px
+          margin: 20px auto 40px auto
+        .shipping__fast-img
+          background: #E78525
+          border-radius: 50%
+          height: 42px
+          width: 42px
+          display: flex
+          align-items: center
+          justify-content: center
+          margin-right: 20px
+          @media (max-width: 911px)
+            min-width: 46px
+            margin-right: 15px
+            height: 46px
+        .shipping__fast-text
+          display: flex
+          flex-direction: column
+          .shipping__fast-title
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 27px
+            text-transform: uppercase
+            color: #E78525
+            @media (max-width: 911px)
+              font-size: 16px
+              line-height: 24px
+          .shipping__fast-sub
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 160%
+            color: #434343
+            margin-top: 5px
+            @media (max-width: 911px)
+              margin-top: 0
+              font-size: 14px
+      h1
         font-family: Poppins, sans-serif
         font-style: normal
-        font-weight: normal
-        font-size: 14px
-        line-height: 21px
-        color: #2E2E2E
-        margin-left: 10px
+        font-weight: 600
+        font-size: 20px
+        line-height: 30px
+        color: #212121
+        max-width: 754px
+        width: 100%
+        margin: 0 auto 24px auto
+        @media (max-width: 911px)
+          font-size: 14px
+          line-height: 21px
+          margin-bottom: 20px
+      .shipping__form
+        display: flex
+        flex-direction: column
+        max-width: 754px
+        margin: 0 auto
+        width: 100%
+        .shipping__inputs
+          display: grid
+          grid-gap: 10px 20px
+          margin-bottom: 20px
+          grid-template-areas: 'first first first first first first' 'last last last last last last' 'address address address address address address' 'code code city city state state' 'email email email phone phone phone'
+          @media (max-width: 911px)
+            grid-template-areas: none
+            grid-template-columns: 1fr
+            grid-gap: 10px
+          input
+
+            &:first-child
+              grid-area: first
+            &:nth-child(2)
+              grid-area: last
+            &:nth-child(3)
+              grid-area: address
+            &:nth-child(4)
+              grid-area: code
+            &:nth-child(5)
+              grid-area: city
+            &:nth-child(6)
+              grid-area: state
+            &:nth-child(7)
+              grid-area: email
+            &:nth-child(8)
+              grid-area: phone
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 210%
+            color: rgba(46, 46, 46, 0.6)
+            background: #FFFFFF
+            border: 1px solid rgba(63, 105, 129, 0.15)
+            border-radius: 10px
+            padding: 10px 20px
+            @media (max-width: 911px)
+              grid-area: auto!important
+              border-radius: 5px
+        label
+          display: flex
+          align-items: center
+          position: relative
+          margin-bottom: 20px
+          cursor: pointer
+          margin-right: auto
+          &:after
+            content: ''
+            position: absolute
+            width: 20px
+            height: 20px
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            background: #FFFFFF
+            border: 1px solid #D0D0D0
+            border-radius: 5px
+          span
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 15px
+            line-height: 22px
+            color: #5F5C5C
+            margin-left: 15px
+            cursor: pointer
+            @media (max-width: 911px)
+              font-size: 14px
+              line-height: 21px
+          svg
+            position: absolute
+            left: 5px
+            top: 50%
+            transform: translateY(-50%)
+            z-index: 1
+            display: none
+          input:checked ~ svg
+            display: block
+          input
+            opacity: 0
+            width: 20px
+            height: 20px
+        .shipping__button
+          display: flex
+          align-items: center
+          padding: 12px 0
+          background: #418542
+          border-radius: 5px
+          justify-content: center
+          cursor: pointer
+          span
+            font-family: Poppins, sans-serif
+            font-style: normal
+            font-weight: 600
+            font-size: 14px
+            line-height: 21px
+            color: #FFFFFF
+            margin-right: 10px
+      .shipping__secure
+        display: flex
+        max-width: 754px
+        width: 100%
+        margin: 15px auto 0 auto
+        align-items: center
+        span
+          font-family: Poppins, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 14px
+          line-height: 21px
+          color: #2E2E2E
+          margin-left: 10px

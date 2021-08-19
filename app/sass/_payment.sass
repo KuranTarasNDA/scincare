@@ -15,6 +15,8 @@
         width: 50%
         z-index: -1
         background: #418542
+        @media (max-width: 911px)
+          display: none
       &:after
         content: ''
         position: absolute
@@ -24,16 +26,30 @@
         width: 50%
         z-index: -2
         background: #E3EDE3
+        @media (max-width: 911px)
+          display: none
       .payment__navigation-left
         width: 100%
         height: 60px
         background: #418542
+        @media (max-width: 911px)
+          position: absolute
+          width: 30%
+          left: 0
+          height: 42px
+          background: #E3EDE3
+          z-index: -1
       .payment__navigation-right
         width: 100%
         height: 60px
         background: #FFFFFF
         transform: translateX(-20px)
         position: relative
+        @media (max-width: 911px)
+          transform: translate(0)
+          width: 20px
+          background: rgba(227, 237, 227, 0.5)
+          height: 42px
         &:after
           content: ''
           position: absolute
@@ -42,11 +58,23 @@
           width: 20px
           background: #FFFFFF
           height: 100%
+          @media (max-width: 911px)
+            display: none
       .payment__navigation-all
         display: flex
+        @media (max-width: 911px)
+          width: 100%
         .payment__navigation-item
           padding: 16.5px 100px
           background-size: contain
+          @media (max-width: 1200px)
+            padding: 16.5px 60px
+          @media (max-width: 911px)
+            width: 100%
+            align-items: center
+            padding: 10.5px 0
+            display: flex
+            justify-content: center
           &:first-child
             position: relative
             &:after
@@ -69,6 +97,8 @@
               color: #FFFFFF
           &:nth-child(2)
             background: url("../img/payment/05.png") right no-repeat #FFFFFF
+            @media (max-width: 911px)
+              background: url("../img/shipping/01.png") right no-repeat #E3EDE380
             span
               font-family: Poppins, sans-serif
               font-style: normal
@@ -76,6 +106,12 @@
               font-size: 18px
               line-height: 27px
               color: #418542
+              @media (max-width: 911px)
+                font-size: 14px
+                line-height: 21px
+          &:not(:nth-child(2))
+            @media (max-width: 911px)
+              display: none
           &:nth-child(3)
             background: #FFFFFF
             position: relative
@@ -106,15 +142,18 @@
       text-align: center
       color: #434343
       background: #FDF3D1
-      padding: 15px 0
+      padding: 15px 20px
       span
         font-weight: 700
     .payment__wrapper
       width: 100%
-      max-width: 753px
+      max-width: 793px
       display: flex
       margin: 40px auto 50px auto
       flex-direction: column
+      padding: 0 20px
+      @media (max-width: 911px)
+        margin-bottom: 0
       .payment-title
         font-family: Poppins, sans-serif
         font-style: normal
@@ -123,10 +162,17 @@
         line-height: 30px
         color: #212121
         margin-bottom: 16px
+        @media (max-width: 911px)
+          font-size: 14px
+          line-height: 21px
+          margin-bottom: 20px
       .payment__payments
         display: grid
         grid-template-columns: 1fr 1fr
         grid-gap: 20px
+        @media (max-width: 911px)
+          grid-template-columns: 1fr
+          grid-gap: 10px
         .payment__payment
           background: #FFFFFF
           overflow: hidden
@@ -137,11 +183,13 @@
           display: flex
           align-items: center
           padding: 20px
+          @media (max-width: 911px)
+            border-radius: 5px
           span
             margin-left: 13px
             font-family: Poppins, sans-serif
             font-style: normal
-            font-weight: 600
+            font-weight: 400
             font-size: 15px
             line-height: 210%
             color: #212121
@@ -149,6 +197,8 @@
             display: none
         .payment__payment_active
           border: 1px solid #E78525
+          span
+            font-weight: 600
           .payment__payment-check
             display: flex
             width: 26px
@@ -171,6 +221,12 @@
         padding: 4.5px 21px 5.5px 20px
         justify-content: space-between
         margin: 10px 0 17px 0
+        @media (max-width: 911px)
+          margin-bottom: 10px
+          flex-direction: column
+          border-radius: 5px
+          align-items: normal
+          padding: 20px 20px 11px 20px
         span
           font-family: Poppins, sans-serif
           font-style: normal
@@ -178,6 +234,9 @@
           font-size: 15px
           line-height: 210%
           color: #000000
+          @media (max-width: 911px)
+            margin-bottom: 5px
+            line-height: 21px
         .payment__accept-all
           display: flex
           align-items: center
@@ -193,6 +252,9 @@
             grid-template-areas: 'one one' 'two three'
             grid-gap: 12px 20px
             margin-bottom: 20px
+            @media (max-width: 911px)
+              grid-template-areas: 'one' 'two' 'three'
+              grid-gap: 10px
             .payment__pay-input
               position: relative
               &:first-child
@@ -213,6 +275,9 @@
                 font-size: 14px
                 line-height: 210%
                 color: #212121
+                @media (max-width: 911px)
+                  border-radius: 5px
+                  padding: 10px 20px
               svg
                 position: absolute
                 top: 50%
@@ -228,6 +293,8 @@
             align-items: center
             cursor: pointer
             margin-bottom: 15px
+            @media (max-width: 911px)
+              margin-bottom: 10px
             span
               font-family: Poppins, sans-serif
               font-style: normal

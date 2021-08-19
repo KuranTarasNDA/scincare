@@ -1,13 +1,21 @@
 .hero
   position: relative
+  padding: 0 20px
+  @media (max-width: 600px)
+    background: #EEF6ED
   .container
     max-width: 1140px
     position: relative
     z-index: 2
     padding: 152px 0 130px 0
+    @media (max-width: 600px)
+      padding-top: 380px
+      padding-bottom: 100px
     .hero__text
       display: flex
       flex-direction: column
+      @media (max-width: 600px)
+        width: 100%
       h1
         font-family: Roboto, sans-serif
         font-style: normal
@@ -17,11 +25,18 @@
         text-transform: uppercase
         color: #3C6B45
         max-width: 600px
+        @media (max-width: 600px)
+          font-size: 36px
+          line-height: 43.2px
+          max-width: 308px
+          margin-bottom: 35px
       .hero__buttons
         display: flex
         flex-direction: column
         .hero-button
           margin-right: auto
+          @media (max-width: 600px)
+            width: 100%
           &:first-child
             font-family: Roboto, sans-serif
             font-style: normal
@@ -34,6 +49,11 @@
             background: #DB8222
             padding: 13px 41px 10px 43px
             position: relative
+            @media (max-width: 600px)
+              font-size: 18px
+              line-height: 21.09px
+              text-align: center
+              padding: 15px 0
             &:after
               content: ''
               position: absolute
@@ -55,12 +75,33 @@
             padding: 12px 50px
             margin-top: 25px
             border-radius: 3px
+            @media (max-width: 600px)
+              font-size: 18px
+              line-height: 21.33px
+              text-align: center
+              padding: 15px 0
+              margin-top: 35px
   .bg
     img
-      position: absolute
-      z-index: 1
-      top: 0
-      left: 0
-      width: 100%
-      object-fit: cover
-      height: 100%
+      &:first-child
+        position: absolute
+        z-index: 1
+        top: 0
+        left: 0
+        width: 100%
+        object-fit: cover
+        height: 100%
+        @media (max-width: 600px)
+          display: none
+      &:last-child
+        display: none
+        @media (max-width: 600px)
+          position: absolute
+          display: block
+          z-index: 1
+          top: 0
+          left: 0
+          width: 100%
+          object-fit: cover
+          height: 100%
+          object-position: top

@@ -1,8 +1,12 @@
 .contact
+  padding: 0 20px
   .container
     max-width: 1140px
     justify-content: space-between
     padding: 50px 0 100px 0
+    @media (max-width: 911px)
+      flex-direction: column
+      padding: 30px 0 20px 0
     p
       font-family: Poppins, sans-serif
       font-style: normal
@@ -15,6 +19,11 @@
       flex-direction: column
       width: 100%
       max-width: 463px
+      margin-right: 20px
+      @media (max-width: 911px)
+        max-width: 100%
+        margin-right: 0
+        padding: 0 20px
       h1
         font-family: Poppins, sans-serif
         font-style: normal
@@ -24,6 +33,10 @@
         text-transform: uppercase
         color: #418542
         margin-bottom: 20px
+        @media (max-width: 911px)
+          font-size: 24px
+          line-height: 36px
+          margin-bottom: 10px
       h2
         font-family: Poppins, sans-serif
         font-style: normal
@@ -34,6 +47,8 @@
         color: #000000
         margin-bottom: 10px
         margin-top: auto
+        @media (max-width: 911px)
+          margin-top: 40px
       .contact__contacts
         display: grid
         grid-template-columns: 1fr 1fr
@@ -43,11 +58,19 @@
         border-right: none
         margin-top: 25px
         grid-gap: 20px 0
+        @media (max-width: 911px)
+          margin-top: 30px
+          padding: 30px 0
+          grid-gap: 20px
+          grid-template-columns: 1fr
+          border-bottom: none
         .contact__item
           display: flex
           &:nth-child(2n)
             .contact__item-wrapper
               margin-left: auto
+              @media (max-width: 911px)
+                margin-left: 0
           h3
             font-family: Poppins, sans-serif
             font-style: normal
@@ -71,6 +94,12 @@
       border: 1px solid #E2EAED
       border-radius: 10px
       padding: 25px 35px
+      @media (max-width: 911px)
+        max-width: 100%
+        padding: 20px
+      .contact__right-p
+        @media (max-width: 911px)
+          text-align: center
       .contact__right-title
         font-family: Poppins, sans-serif
         font-style: normal
@@ -80,10 +109,14 @@
         text-transform: uppercase
         color: #000000
         margin-bottom: 15px
+        @media (max-width: 911px)
+          text-align: center
       .contact__form
         display: flex
         flex-direction: column
         margin-top: 30px
+        @media (max-width: 911px)
+          margin-top: 20px
         .contact-input
           font-family: Poppins, sans-serif
           font-style: normal
@@ -97,6 +130,9 @@
           border-radius: 10px
           margin-bottom: 20px
           resize: none
+          @media (max-width: 911px)
+            margin-bottom: 10px
+            border-radius: 5px
         .contact-button
           font-family: Poppins, sans-serif
           font-style: normal
@@ -108,4 +144,6 @@
           background: #418542
           border-radius: 5px
           padding: 14.5px 34.5px
-          margin: 0 auto
+          margin: 10px auto 0 auto
+          @media (max-width: 911px)
+            width: 100%

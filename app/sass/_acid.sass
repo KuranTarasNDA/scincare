@@ -1,15 +1,27 @@
 .acid
   .container
+    @media (max-width: 911px)
+      flex-direction: column-reverse
     .acid__left
       background: #FFF8EF
       padding: 60px 0
       width: 50%
       display: flex
+      @media (max-width: 911px)
+        width: 100%
+        padding: 0
       .acid__left-wrapper
-        max-width: 463px
+        max-width: 503px
         margin: auto 108px auto auto
         display: flex
         flex-direction: column
+        padding-left: 40px
+        @media (max-width: 1024px)
+          margin-right: 50px
+        @media (max-width: 911px)
+          max-width: 100%
+          margin: 0
+          padding: 30px 48px 40px 40px
         h1
           font-family: Poppins, sans-serif
           font-style: normal
@@ -18,6 +30,9 @@
           line-height: 128.5%
           letter-spacing: -0.5px
           color: #E78525
+          @media (max-width: 911px)
+            margin-bottom: 20px
+            font-size: 24px
         .acid__paragraphs
           display: flex
           flex-direction: column
@@ -29,12 +44,30 @@
             line-height: 160%
             text-align: justify
             color: #434343
+            @media (max-width: 911px)
+              font-size: 14px
+              position: relative
+            &:before
+              @media (max-width: 911px)
+                content: ''
+                position: absolute
+                left: -15px
+                border-radius: 50%
+                top: 8px
+                width: 5px
+                height: 5px
+                background: #E78525
             &:not(:last-child)
               margin-bottom: 24px
     .acid__right
       width: 50%
       display: flex
+      @media (max-width: 911px)
+        width: 100%
+        height: 300px
       img
         width: 100%
         height: 100%
         object-fit: cover
+        @media (max-width: 911px)
+          object-position: left
