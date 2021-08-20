@@ -25,7 +25,11 @@ $(window).on("load" , function () {
             $('.header').removeClass('header_border')
         }
     })
-
+    if ($('.header').offset().top > 0) {
+        $('.header').addClass('header_border')
+    } else {
+        $('.header').removeClass('header_border')
+    }
 })
 
 
