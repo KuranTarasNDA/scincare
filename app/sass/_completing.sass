@@ -348,7 +348,6 @@
               padding: 7px 38.5px
               margin-bottom: 25px
               white-space: nowrap
-              cursor: pointer
               @media (max-width: 650px)
                 font-size: 9px
                 margin-bottom: 10px
@@ -363,6 +362,10 @@
               background: #FFFFFF
               border: 1px solid #D0D0D0
               border-radius: 10px
+              cursor: pointer
+              transition-duration: 0.4s
+              &:hover
+                background: #D0D0D0
               @media (max-width: 650px)
                 width: 40px
                 height: 40px
@@ -464,6 +467,9 @@
         border-radius: 5px
         padding: 12px 0
         margin: 20px 0
+        transition-duration: 0.4s
+        &:hover
+          background: #3C5F43
       .completing__policy
         font-family: Poppins, sans-serif
         font-style: normal
@@ -476,6 +482,9 @@
         a
           color: #418542
           text-decoration: underline
+          transition-duration: 0.4s
+          &:hover
+            color: #DB8222
 
 
 

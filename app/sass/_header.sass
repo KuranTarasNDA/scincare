@@ -58,6 +58,9 @@
         max-width: 145px
         max-height: 97px
         margin-right: 48px
+        transition-duration: 0.4s
+        &:hover
+          opacity: 0.8
         @media (max-width: 1024px)
           min-width: 74.17px
           max-width: 74.17px
@@ -91,6 +94,18 @@
             top: 50%
             transform: translateY(-50%)
             cursor: pointer
+            transition-duration: 0.4s
+            opacity: 1
+            &:hover
+              svg
+                opacity: 1
+                fill: red
+                path
+                  opacity: 1
+                  fill-opacity: 0.5
+            svg
+              path
+                transition-duration: 0.4s
           input
             background: #FFFFFF
             border: 1px solid rgba(208, 208, 208, 0.5)
@@ -119,6 +134,9 @@
               line-height: 32px
               letter-spacing: 1px
               color: #2E2E2E
+              transition-duration: 0.4s
+              &:hover
+                color: #418542
               &:not(:last-child)
                 margin-right: 25px
             .header__link_active
@@ -132,8 +150,11 @@
               margin-right: 48px
               cursor: pointer
               position: relative
+              transition-duration: 0.4s
               @media (max-width: 1024px)
                 display: none
+              &:hover
+                opacity: 0.8
               &:after
                 content: ''
                 position: absolute
@@ -209,7 +230,7 @@
                 right: -40px
                 bottom: 0
                 transform: translateY(100%)
-                z-index: 10
+                z-index: 12
                 width: 483px
                 background: #FFFFFF
                 border: 1px solid #E2EAED
@@ -276,6 +297,15 @@
                         align-items: center
                         justify-content: center
                         display: flex
+                        transition-duration: 0.4s
+                        &:hover
+                          border-color: silver
+                          svg
+                            path
+                              fill: #000000
+                        svg
+                          path
+                            transition-duration: 0.4s
                 .header__cart-nav
                   display: flex
                   justify-content: space-between
@@ -317,6 +347,10 @@
                         border-radius: 5px
                         padding: 12px 28px
                         margin-right: 10px
+                        transition-duration: 0.4s
+                        &:hover
+                          color: #E3EDE3
+                          background: #418542
                       &:last-child
                         font-family: Poppins, sans-serif
                         font-style: normal
@@ -327,6 +361,10 @@
                         background: #418542
                         border-radius: 5px
                         padding: 12px 28px
+                        transition-duration: 0.4s
+                        &:hover
+                          color: #418542
+                          background: #E3EDE3
                 .header__cart-desc
                   display: flex
                   flex-direction: column

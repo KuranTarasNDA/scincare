@@ -51,6 +51,12 @@
             background: #DB8222
             padding: 13px 41px 10px 43px
             position: relative
+            transition-duration: 0.4s
+            &:hover
+              background: #E78525
+              &:after
+                right: 5px
+                bottom: 5px
             @media (max-width: 600px)
               font-size: 18px
               line-height: 21.09px
@@ -66,6 +72,7 @@
               z-index: -1
               height: 100%
               box-sizing: border-box
+              transition-duration: 0.4s
           &:last-child
             font-family: Rubik, sans-serif
             font-style: normal
@@ -77,6 +84,10 @@
             padding: 12px 50px
             margin-top: 25px
             border-radius: 3px
+            transition-duration: 0.4s
+            &:hover
+              color: #FFFFFF
+              background: #3C5F43
             @media (max-width: 600px)
               font-size: 18px
               line-height: 21.33px

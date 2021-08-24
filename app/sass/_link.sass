@@ -1,6 +1,10 @@
 .link
   background: #418542
   padding: 0 20px
+  pointer-events: none
+  transition-duration: 0.4s
+  &:hover
+    background: #3C5F43
   .container
     padding: 30px 0 28px
     max-width: 1140px
@@ -11,7 +15,10 @@
     a
       display: flex
       align-items: center
+      transition-duration: 0.4s
+      pointer-events: all
       span
+        pointer-events: all
         font-family: Poppins, sans-serif
         font-style: normal
         font-weight: bold
@@ -20,6 +27,7 @@
         text-transform: uppercase
         color: #FFFFFF
         margin-right: 15px
+        transition-duration: 0.4s
         @media (max-width: 911px)
           font-size: 18px
           line-height: 27px
@@ -27,3 +35,5 @@
       svg
         width: 18px
         height: 14px
+        path
+          transition-duration: 0.4s

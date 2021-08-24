@@ -23,6 +23,12 @@
         display: flex
         align-items: center
         cursor: pointer
+        &:hover
+          span
+            color: #DB8222
+          svg
+            path
+              fill: #DB8222
         span
           font-family: Poppins, sans-serif
           font-style: normal
@@ -31,6 +37,10 @@
           line-height: 21px
           color: #418542
           margin-right: 5px
+          transition-duration: 0.4s
+        svg
+          path
+            transition-duration: 0.4s
       h2
         margin-bottom: 10px
         @media (max-width: 911px)
@@ -156,6 +166,9 @@
             justify-content: center
             padding: 12px 0
             margin-top: auto
+            transition-duration: 0.4s
+            &:hover
+              background: #3C5F43
             span
               font-family: Poppins, sans-serif
               font-style: normal

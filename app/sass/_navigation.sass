@@ -39,6 +39,9 @@
           padding: 10px 20px
           display: flex
           align-items: center
+          transition-duration: 0.4s
+          &:hover
+            opacity: 0.8
           @media (max-width: 600px)
             justify-content: center
             padding: 10px 0
@@ -74,6 +77,14 @@
         display: flex
         align-items: center
         cursor: pointer
+        transition-duration: 0.4s
+        &:hover
+          border-color: silver
+          span
+            color: #418542
+          svg
+            path
+              fill: #418542
         @media (max-width: 600px)
           width: 50%
           margin-right: 10px
@@ -86,6 +97,10 @@
           line-height: 200%
           color: #2E2E2E
           margin-left: 10px
+          transition-duration: 0.4s
+        svg
+          path
+            transition-duration: 0.4s
       .navigation__next
         background: #EEF6ED
         border-radius: 5px
@@ -93,6 +108,14 @@
         display: flex
         align-items: center
         cursor: pointer
+        transition-duration: 0.4s
+        &:hover
+          background: #418542
+          span
+            color: #EEF6ED
+          svg
+            path
+              fill: #EEF6ED
         @media (max-width: 600px)
           width: 50%
           justify-content: center
@@ -104,6 +127,10 @@
           line-height: 200%
           color: #418542
           margin-right: 10px
+          transition-duration: 0.4s
+        svg
+          path
+            transition-duration: 0.4s
 
 
 

@@ -86,7 +86,10 @@
             font-size: 14px
             line-height: 200%
             color: #000000
-            cursor: pointer
+          a
+            transition-duration: 0.4s
+            &:hover
+              opacity: 0.7
     .contact__right
       width: 100%
       max-width: 463px
@@ -123,7 +126,7 @@
           font-weight: normal
           font-size: 14px
           line-height: 210%
-          color: rgba(33, 33, 33, 0.6)
+          color: rgba(33, 33, 33, 1)
           padding: 10px 20px
           background: #FFFFFF
           border: 1px solid rgba(63, 105, 129, 0.15)
@@ -145,5 +148,8 @@
           border-radius: 5px
           padding: 14.5px 34.5px
           margin: 10px auto 0 auto
+          transition-duration: 0.4s
+          &:hover
+            background: #3C5F43
           @media (max-width: 911px)
             width: 100%
