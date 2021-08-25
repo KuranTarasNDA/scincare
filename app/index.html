@@ -5,7 +5,7 @@
     <!-- Useful meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <link rel="stylesheet" href="/css/app.min.css">
+    <link rel="stylesheet" href="css/app.min.css">
     <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
 <header class="header">
@@ -47,7 +48,7 @@
                         <a href="" class="header__link">SHIPPING AND RETURNS</a>
                     </div>
                     <div class="header__personal">
-                        <div class="header__profile">
+                        <a href="login.html" class="header__profile">
                             <div class="header__profile-img">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip456)">
@@ -64,7 +65,7 @@
                             <div class="header__profile-top">
                                 <span>LOGIN</span>
                             </div>
-                        </div>
+                        </a>
                         <div class="header__cart">
                             <div class="header__cart-img">
                                 <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,7 +219,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__mob-login">
+                <a href="login.html" class="header__mob-login">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip456)">
                             <path d="M7.88591 1.03762C7.09995 1.03762 6.45106 1.30649 5.89498 1.86258C5.33876 2.4188 5.06977 3.06781 5.06977 3.85351C5.06977 4.63946 5.33876 5.28846 5.89496 5.84455L7.88591 1.03762ZM7.88591 1.03762C8.67174 1.03762 9.32075 1.30649 9.87696 1.86257M7.88591 1.03762L9.87696 1.86257M9.87696 1.86257C10.4331 2.41879 10.702 3.06781 10.702 3.85351M9.87696 1.86257L10.702 3.85351M10.702 3.85351C10.702 4.63945 10.4331 5.28834 9.87697 5.84456M10.702 3.85351L9.87697 5.84456M9.87697 5.84456C9.87697 5.84456 9.87696 5.84457 9.87696 5.84457M9.87697 5.84456L9.87696 5.84457M9.87696 5.84457C9.32075 6.40077 8.67174 6.66964 7.88591 6.66964C7.10022 6.66964 6.45132 6.40066 5.89497 5.84455L9.87696 5.84457ZM10.6815 6.64894L10.6815 6.64894C11.4492 5.88106 11.8397 4.93901 11.8397 3.85351C11.8397 2.76838 11.4494 1.8262 10.6814 1.05808L10.6813 1.05806C9.91333 0.290304 8.97116 -0.1 7.88591 -0.1C6.80042 -0.1 5.85836 0.290304 5.09047 1.05819C4.32258 1.82608 3.93215 2.76825 3.93215 3.85351C3.93215 4.939 4.32258 5.88118 5.09047 6.64907L5.09049 6.64908C5.8586 7.41683 6.80077 7.80726 7.88591 7.80726C8.97128 7.80726 9.91346 7.41696 10.6815 6.64894Z" fill="#2E2E2E" stroke="#2E2E2E" stroke-width="0.2"/>
@@ -231,12 +232,9 @@
                         </defs>
                     </svg>
                     <span>
-                    LOGIN
-                </span>
-                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.87213 2.03232L7.61008 1.76845C7.52761 1.68604 7.41788 1.64064 7.30061 1.64064C7.18341 1.64064 7.07355 1.68604 6.99108 1.76845L4.00179 4.75787L1.00905 1.76513C0.926707 1.68272 0.816852 1.63739 0.699648 1.63739C0.582444 1.63739 0.472524 1.68272 0.390117 1.76513L0.128001 2.02738C-0.042667 2.19791 -0.042667 2.47571 0.128001 2.64624L3.69122 6.22227C3.77356 6.30461 3.88328 6.36263 4.00153 6.36263H4.00289C4.12016 6.36263 4.22989 6.30455 4.31223 6.22227L7.87213 2.65593C7.9546 2.57359 7.99987 2.46055 8 2.34335C8 2.22608 7.9546 2.1146 7.87213 2.03232Z" fill="#2E2E2E"/>
-                    </svg>
-                </div>
+                        LOGIN
+                    </span>
+                </a>
             </div>
 
         </div>
@@ -250,7 +248,7 @@
                     New mood</h1>
                 <div class="hero__buttons">
                     <a href="" class="hero-button">FREE SHIPPING</a>
-                    <a href="" class="hero-button">USE CODE: SPRING</a>
+                    <div class="hero-button">USE CODE: SPRING</div>
                 </div>
             </div>
         </div>
@@ -343,9 +341,9 @@
             </div>
             <div class="featured__all">
                 <div class="featured__item">
-                    <div class="featured__img">
+                    <a href="" class="featured__img">
                         <img src="img/featured/01.png" alt="">
-                    </div>
+                    </a>
                     <div class="featured__text">
                         <p class="featured-desc">
                             Hyaluronic Acid for Face - 100% Pure Medical Quality Clinical Strength Formula - Anti aging...
@@ -396,9 +394,9 @@
                     </div>
                 </div>
                 <div class="featured__item">
-                    <div class="featured__img">
+                    <a href="" class="featured__img">
                         <img src="img/featured/02.png" alt="">
-                    </div>
+                    </a>
                     <div class="featured__text">
                         <p class="featured-desc">
                             Vitamin C Serum for Face (2oz) with Hyaluronic Acid and Vitamin E Natural Skin Care Facial Treat...
@@ -449,9 +447,9 @@
                     </div>
                 </div>
                 <div class="featured__item">
-                    <div class="featured__img">
+                    <a href="" class="featured__img">
                         <img src="img/featured/03.png" alt="">
-                    </div>
+                    </a>
                     <div class="featured__text">
                         <p class="featured-desc">
                             Retinol serum for face (2oz) with Hyaluronic Acid + Vitamin A and E + Aloe Vera - Anti aging moist...
@@ -502,9 +500,9 @@
                     </div>
                 </div>
                 <div class="featured__item">
-                    <div class="featured__img">
+                    <a href="" class="featured__img">
                         <img src="img/featured/04.png" alt="">
-                    </div>
+                    </a>
                     <div class="featured__text">
                         <p class="featured-desc">
                             Instaskincare 100% pure Hyaluronic acid serum 2oz noAlcohol moisturizer Strength...
@@ -746,14 +744,14 @@
         </div>
     </section>
     <section class="link">
-        <div class="container">
-            <a href="">
+        <a href="" class="container">
+            <div class="link__wrapper">
                 <span>shop our products</span>
                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2572 1.05133C13.9923 0.316224 15.1842 0.316224 15.9193 1.05133L22.0369 7.16898C22.772 7.90408 22.772 9.09592 22.0369 9.83103L15.9193 15.9487C15.1842 16.6838 13.9923 16.6838 13.2572 15.9487C12.5221 15.2136 12.5221 14.0217 13.2572 13.2866L16.1615 10.3824H1.88235C0.842758 10.3824 0 9.53959 0 8.5C0 7.46041 0.842758 6.61765 1.88235 6.61765H16.1615L13.2572 3.71338C12.5221 2.97827 12.5221 1.78643 13.2572 1.05133Z" fill="white"/>
                 </svg>
-            </a>
-        </div>
+            </div>
+        </a>
     </section>
 </main>
 <footer class="footer">
@@ -794,9 +792,9 @@
             <div class="footer__col">
                 <div class="footer-sub">Contact </div>
                 <div class="footer__links">
-                    <a href="" class="footer__link">Email: info@instaskincare.club</a>
-                    <a href="" class="footer__link">Hoteline: 1 (888) 802-84-86</a>
-                    <a href="" class="footer__link">Address: 324 Virginia Ave. Westwood</a>
+                    <a href="mailto:info@instaskincare.club" class="footer__link">Email: info@instaskincare.club</a>
+                    <a href="tel:1 (888) 802-84-86" class="footer__link">Hoteline: 1 (888) 802-84-86</a>
+                    <a href="" class="footer__link footer__link_not">Address: 324 Virginia Ave. Westwood</a>
                 </div>
             </div>
         </div>
@@ -835,5 +833,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
         crossorigin="anonymous"></script>
 <script src="js/app.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>

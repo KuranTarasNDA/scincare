@@ -364,11 +364,27 @@
               border-radius: 10px
               cursor: pointer
               transition-duration: 0.4s
+              display: flex
+              align-items: center
+              justify-content: center
               &:hover
                 background: #D0D0D0
               @media (max-width: 650px)
                 width: 40px
                 height: 40px
+              svg
+                width: 25px
+                height: 25px
+                opacity: 0
+                visibility: hidden
+                transition-duration: 0.4s
+                @media(max-width: 650px)
+                  width: 18px
+                  height: 18px
+            .completing__banner-rectangle_active
+              svg
+                opacity: 1
+                visibility: visible
             .completing__banner-price
               display: flex
               margin-top: 26px
@@ -401,7 +417,7 @@
                   font-size: 12px
                   line-height: 18px
                   margin-left: 0
-            svg
+            .completing__banner-arrow
               position: absolute
               left: -17px
               top: 25.5px
